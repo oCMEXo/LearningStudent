@@ -25,9 +25,9 @@ document.getElementById("NAme").addEventListener("input", function (event) {
     const inputFile = this
 
     if (inputFile.value.trim() !== '') {
-        progressbar.style.width = '30%'; // Обновляем ширину прогресс-бара
+        progressbar.style.width = '30%';
         number_Event.textContent = '2';
-        progressText.textContent = 'Completed 33%'; // Обновляем текст прогресса
+        progressText.textContent = 'Completed 33%';
     } else {
         progressbar.style.width = '30%';
         number_Event.textContent = '2';
@@ -42,9 +42,9 @@ document.getElementById("NAme",).addEventListener("input", function (event) {
     const inputFile = this
 
     if (inputFile.value.trim() !== '') {
-        progressbar.style.width = '30%'; // Обновляем ширину прогресс-бара
+        progressbar.style.width = '30%';
         number_Event.textContent = '2';
-        progressText.textContent = 'Completed 33%'; // Обновляем текст прогресса
+        progressText.textContent = 'Completed 33%';
     } else {
         progressbar.style.width = '30%';
         number_Event.textContent = '2';
@@ -60,9 +60,9 @@ document.getElementById("Date",).addEventListener("input", function (event) {
     const inputFile = this
 
     if (inputFile.value.trim() !== '') {
-        progressbar.style.width = '60%'; // Обновляем ширину прогресс-бара
+        progressbar.style.width = '60%';
         number_Event.textContent = '3';
-        progressText.textContent = 'Completed 66%'; // Обновляем текст прогресса
+        progressText.textContent = 'Completed 66%';
     } else {
         progressbar.style.width = '60%';
         number_Event.textContent = '3';
@@ -78,9 +78,9 @@ document.getElementById("Time",).addEventListener("input", function (event) {
     const inputFile = this
 
     if (inputFile.value.trim() !== '') {
-        progressbar.style.width = '100%'; // Обновляем ширину прогресс-бара
+        progressbar.style.width = '100%';
         number_Event.textContent = '3';
-        progressText.textContent = 'Completed 100%'; // Обновляем текст прогресса
+        progressText.textContent = 'Completed 100%';
     } else {
         progressbar.style.width = '100%';
         number_Event.textContent = '3';
