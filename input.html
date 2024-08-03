@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>input</title>
+    <link rel="stylesheet" href="input.css">
+</head>
+<body>
+<div class="container">
+    <div class="progress-bar">
+        <div class="distance">
+            <h1>STEP <span id="number_Event">1</span>/3 - Event Details</h1>
+            <h3 id="Complated">Complated 0%</h3>
+        </div>
+        <div class="line-bar">
+            <div class="bar" id="bar"></div>
+        </div>
+    </div>
+    <div class="event">
+        <div class="eventInfo">
+            <h3>Event Information</h3>
+        </div>
+        <div class="label">
+            <label for="NAme">Company Name</label>
+            <input class="inputs" type="text" id="NAme" placeholder="Company Name">
+        </div>
+        <div class="eventDate">
+            <div class="label">
+                <label for="Date">Event Date</label>
+                <input class='inputs' type="date" name="Date" id="Date">
+            </div>
+            <div class="label">
+                <label for="Time">Event Time</label>
+                <input class='inputs' type="time" name="Time" id="Time" placeholder="Ex: 10:00 - 20:00 AM">
+            </div>
+        </div>
+    </div>
+    <div class="button">
+        <a class="Back" href="#"> < Back</a>
+        <a class="Next " href="#">Next ></a>
+    </div>
+
+</div>
+<script src="input.js"></script>
+</body>
+</html>
