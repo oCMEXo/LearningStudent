@@ -123,8 +123,12 @@ input {
     gap: 10px;
     align-items: end;
     label {
-        margin-left: 10px;
+        margin-left: 5px;
         color: blue;
+        input {
+            width: 150px;
+            border: none;
+        }
     }
 }
 
@@ -143,7 +147,7 @@ a {
 
 .numbers {
     input {
-        margin-left: 20px;
+        margin-left: 30px;
         color: blue;
         width: 125px;
         border: none;
@@ -163,8 +167,7 @@ input {
 }
 
 .price {
-    margin-left: 30px;
-
+    margin-left: 20px;
     input {
         width: 56px;
         text-align: right;
@@ -176,7 +179,7 @@ input {
 .numberSecond {
     input {
         border: none;
-        width: 115px;
+        width: 105px;
 
     }
 }
@@ -186,13 +189,22 @@ input {
     .fas.fa-check {
         color: gray;
         font-size: 24px;
-        margin-right: 8px;
+        margin-right: 6px;
+    }
+}
+
+.PAPTwo {
+    width: 90px;
+    .fas.fa-check {
+        color: white;
+        font-size: 24px;
+        margin-right: 6px;
     }
 }
 
 
 .FAX {
-    margin-left: 60px;
+    margin-left: 70px;
     .fas.fa-check {
         color: gray;
         font-size: 24px;
@@ -219,19 +231,16 @@ input {
 .threeLine {
     display: flex;
     align-items: end;
-    gap: 10px;
+    gap: 9px;
     label {
-        margin-left: 10px;
+        margin-left: 5px;
         color: blue;
-    }
-    .numbers {
-        margin-left: 80px;
-    }
-    .PAP {
-        i {
-            display: none;
+        input {
+            width: 150px;
+            border: none;
         }
     }
+
 }
 
 .endButton {
@@ -247,6 +256,7 @@ input {
 
 #Cansel {
     color: blue;
+    background-color: white;
 }
 
 #Save {

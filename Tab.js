@@ -6,10 +6,16 @@ function formatPhoneNumber(event) {
 // Получение элементов по ID
 const number = document.getElementById('phone');
 const number2 = document.getElementById('phoneS');
+const number3 = document.getElementById('phoneThree');
+const number4 = document.getElementById('phoneSThree');
 
 // Привязка функции-обработчика к событиям input обоих элементов
 number.addEventListener('input', formatPhoneNumber);
 number2.addEventListener('input', formatPhoneNumber);
+number3.addEventListener('input', formatPhoneNumber);
+number4.addEventListener('input', formatPhoneNumber);
+
+
 
 document.getElementById('currency').addEventListener('input', function (event) {
     let value = event.target.value.replace(/[^0-9.]/g, ''); // Удаление всех символов, кроме цифр и точки
