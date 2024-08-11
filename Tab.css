@@ -195,11 +195,7 @@ input {
 
 .PAPTwo {
     width: 90px;
-    .fas.fa-check {
-        color: white;
-        font-size: 24px;
-        margin-right: 6px;
-    }
+
 }
 
 
@@ -262,4 +258,9 @@ input {
 #Save {
     color: white;
     background-color: blue;
+}
+
+
+.checkBox {
+    border: none;
 }

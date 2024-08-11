@@ -10,119 +10,123 @@
 <body>
 
 <div class="container">
-    <div class="labels">
-        <div class="Physicians">Physicians (2)</div>
-        <div class="button">
-            <button>Rename</button>
-            <button>Remove</button>
-            <button class="AddP">Add Physician</button>
-        </div>
-    </div>
-    <div class="content ">
-        <div class="oneName">
-            <input type="checkbox" name="Chbox" id="Chbox">
-            <label for="Chbox">Content Name</label>
-            <div class="arrow-down"></div>
-            <div class="br"></div>
-            <div class="Name">
-                Contact Ph...
-                <div class="arrow-down"></div>
-                <div class="br"></div>
-            </div>
-            <div class="Name">
-                Bud...
-                <div class="arrow-down"></div>
-                <div class="br"></div>
-            </div>
-            <div class="Name">
-                Contact...
-                <div class="arrow-down"></div>
-                <div class="br"></div>
-            </div>
-            <div class="NameFix">
-                PAP
-                <div class="br"></div>
-            </div>
-            <div class="NameFix">
-                FAX
-                <div class="br"></div>
-            </div>
-            <div class="Name">
-                Imagin...
-                <div class="arrow-down"></div>
-                <div class="br"></div>
-            </div>
-            <div class="Name">
-                Preferr...
-                <div class="arrow-down"></div>
-                <div class="br"></div>
+    <form action="finalTab.html" method="post" enctype="multipart/form-data" id="Form">
+        <div class="labels">
+            <div class="Physicians">Physicians (2)</div>
+            <div class="button">
+                <button type="button">Rename</button>
+                <button type="reset">Remove</button>
+                <button type="submit" class="AddP">Add Physician</button>
             </div>
         </div>
-        <div class="secondLine">
-            <div class="first">1</div>
-            <input type="checkbox" name="ChboxTwo" id="ChboxTwo">
-            <label for="phone"><input type="text" placeholder=" Name Company"></label>
-            <div class="numbers">
-                <input type="text" id="phone" name="phone" maxlength="14" placeholder="Number">
-            </div>
-            <div class="price">
-                <input type="text" id="currency" name="currency" placeholder="$0.00">
-            </div>
-            <div class="numberSecond">
-                <input type="text" id="phoneS" maxlength="14" placeholder="Number">
-            </div>
-            <div class="PAP">
-                <i class="fas fa-check"></i>
-            </div>
-            <div class="FAX">
-                <i class="fas fa-check"></i>
-            </div>
-            <div class="imag">
-                <input type="text" name="text" id="Text" placeholder="Comment">
-            </div>
-            <div class="Preferr">
-                <input type="text" name="text" id="TextSecond" placeholder="Sec comment">
-            </div>
-            <div class="arrow">
-            </div>
 
-        </div>
-        <div class="line"></div>
-        <div class="threeLine">
-            <div class="first">2</div>
-            <input type="checkbox" name="ChboxTwo" id="ChboxThree">
-            <label for="phone"><input type="text" placeholder=" Name company"></label>
-            <div class="numbers ">
-                <input type="text" id="phoneThree" name="phone" maxlength="14" placeholder="Your number">
+        <div class="content ">
+            <div class="oneName">
+                <input type="checkbox" name="Chbox" id="Chbox">
+                <label for="Chbox">Content Name</label>
+                <div class="arrow-down"></div>
+                <div class="br"></div>
+                <div class="Name">
+                    Contact Ph...
+                    <div class="arrow-down"></div>
+                    <div class="br"></div>
+                </div>
+                <div class="Name">
+                    Bud...
+                    <div class="arrow-down"></div>
+                    <div class="br"></div>
+                </div>
+                <div class="Name">
+                    Contact...
+                    <div class="arrow-down"></div>
+                    <div class="br"></div>
+                </div>
+                <div class="NameFix">
+                    PAP
+                    <div class="br"></div>
+                </div>
+                <div class="NameFix">
+                    FAX
+                    <div class="br"></div>
+                </div>
+                <div class="Name">
+                    Imagin...
+                    <div class="arrow-down"></div>
+                    <div class="br"></div>
+                </div>
+                <div class="Name">
+                    Preferr...
+                    <div class="arrow-down"></div>
+                    <div class="br"></div>
+                </div>
             </div>
-            <div class="price fixPrice">
-                <input type="text" id="currencyThree" name="currency" placeholder="$0.00">
-            </div>
-            <div class="numberSecond">
-                <input type="text" id="phoneSThree" maxlength="14" placeholder=" Number">
-            </div>
-            <div class="PAPTwo">
-                <i class="fas fa-check"></i>
-            </div>
-            <div class="FAX">
-                <i class="fas fa-check"></i>
-            </div>
-            <div class="imag">
-                <input type="text" name="text" id="TextThree" placeholder="  Comment">
-            </div>
-            <div class="Preferr">
-                <input type="text" name="text" id="TextThreeS" placeholder=" Sec omment">
-            </div>
-            <div class="arrow">
+            <div class="secondLine">
+                <div class="first">1</div>
+                <input type="checkbox" name="ChboxTwo" id="ChboxTwo">
+                <label for="phone"><input type="text" placeholder=" Name Company"></label>
+                <div class="numbers">
+                    <input type="tel" id="phone" name="phone" maxlength="14" placeholder="Number">
+                </div>
+                <div class="price">
+                    <input type="text" id="currency" name="currency" placeholder="$0.00">
+                </div>
+                <div class="numberSecond">
+                    <input type="tel" id="phoneS" maxlength="14" placeholder="Number">
+                </div>
+                <div class="PAP">
+                    <input class='checkBoxTick' type="checkbox" name="checkBoxPap" id="checkBoxPapOne">
+                </div>
+                <div class="FAX">
+                    <input class='checkBoxTick' type="checkbox" name="checkBoxFax" id="checkBoxFaxOne">
+                </div>
+                <div class="imag">
+                    <input type="text" name="text" id="Text" placeholder="Comment">
+                </div>
+                <div class="Preferr">
+                    <input type="text" name="text" id="TextSecond" placeholder="Sec comment">
+                </div>
+                <div class="arrow">
+                </div>
 
             </div>
+            <div class="line"></div>
+            <div class="threeLine">
+                <div class="first">2</div>
+                <input type="checkbox" name="ChboxTwo" id="ChboxThree">
+                <label for="phone"><input type="text" placeholder=" Name company"></label>
+                <div class="numbers ">
+                    <input type="text" id="phoneThree" name="phone" maxlength="14" placeholder="Your number">
+                </div>
+                <div class="price fixPrice">
+                    <input type="text" id="currencyThree" name="currency" placeholder="$0.00">
+                </div>
+                <div class="numberSecond">
+                    <input class="checkBox" type="text" id="phoneSThree" maxlength="14" placeholder=" Number">
+                </div>
+                <div class="PAPTwo">
+                    <input class="checkBoxTick" type="checkbox" name="checkBoxPapTwo" id="checkBoxPapTwo">
+                </div>
+                <div class="FAX">
+                    <input class='checkBoxTick' type="checkbox" name="checkBoxFax" id="checkBoxFax">
+                </div>
+                <div class="imag">
+                    <input type="text" name="text" id="TextThree" placeholder="  Comment">
+                </div>
+                <div class="Preferr">
+                    <input type="text" name="text" id="TextThreeS" placeholder=" Sec omment">
+                </div>
+                <div class="arrow">
+
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="endButton">
+                <button type="button" id="Cansel">Cansel</button>
+                <button type="button" id="Save">Save</button>
+            </div>
         </div>
-        <div class="line"></div>
-        <div class="endButton">
-            <button id="Cansel">Cansel</button>
-            <button id="Save">Save</button>
-        </div>
-    </div>
+    </form>
+
 </div>
 <script src="Tab.js"></script>
 </body>

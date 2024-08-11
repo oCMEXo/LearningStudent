@@ -1,3 +1,30 @@
+
+
+const form = document.getElementById('form');
+const FormFields  = form.element();
+
+const submitBtn = document.querySelector('[type="submit"]');
+
+submitBtn.addEventListener('click', clearAll)
+
+
+for(let i = 0; i < FormFields; i++){
+    FormFields[i].addEventListener('change', chahgeHalder)
+}
+
+
+function clearAll() {
+    localStorage.clear();
+}
+
+function chahgeHalder() {
+    if( this.type !== 'checkbox'){
+        console.log( this.name, this.value)
+    }else {
+        console.log( this.name, this.checked)
+    }
+}
+
 function formatPhoneNumber(event) {
     let x = event.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
     event.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
