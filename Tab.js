@@ -1,5 +1,5 @@
 
-
+// форма отправления данных на финальную страницу
 const form = document.getElementById('form');
 const FormFields  = form.element();
 
