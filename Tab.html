@@ -1,133 +1,236 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--    <link rel="stylesheet" href="Tab.css">-->
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">-->
+
+<!--</head>-->
+<!--<body>-->
+
+<!--<div class="container">-->
+<!--    <form method="post" enctype="multipart/form-data" id="Form">-->
+<!--        <div class="labels">-->
+<!--            <div class="Physicians">Physicians (2)</div>-->
+<!--            <div class="button">-->
+<!--                <button class="btn renameBtn" type="button">Rename</button>-->
+<!--                <button class="btn removeBtn" type="reset">Remove</button>-->
+<!--                <button type="submit" id="addPhysicianBtn">Add Physician</button>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="table-container ">-->
+<!--            <div class="oneName" id="table">-->
+<!--                <input type="checkbox" name="Chbox" id="Chbox">-->
+<!--                <label for="Chbox">Content Name</label>-->
+<!--                <div class="arrow-down"></div>-->
+<!--                <div class="br"></div>-->
+<!--                <div class="Name">-->
+<!--                    Contact Ph...-->
+<!--                    <div class="arrow-down"></div>-->
+<!--                    <div class="br"></div>-->
+<!--                </div>-->
+<!--                <div class="Name">-->
+<!--                    Bud...-->
+<!--                    <div class="arrow-down"></div>-->
+<!--                    <div class="br"></div>-->
+<!--                </div>-->
+<!--                <div class="Name">-->
+<!--                    Contact...-->
+<!--                    <div class="arrow-down"></div>-->
+<!--                    <div class="br"></div>-->
+<!--                </div>-->
+<!--                <div class="NameFix">-->
+<!--                    PAP-->
+<!--                    <div class="br"></div>-->
+<!--                </div>-->
+<!--                <div class="NameFix">-->
+<!--                    FAX-->
+<!--                    <div class="br"></div>-->
+<!--                </div>-->
+<!--                <div class="Name">-->
+<!--                    Imagin...-->
+<!--                    <div class="arrow-down"></div>-->
+<!--                    <div class="br"></div>-->
+<!--                </div>-->
+<!--                <div class="Name">-->
+<!--                    Preferr...-->
+<!--                    <div class="arrow-down"></div>-->
+<!--                    <div class="br"></div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--&lt;!&ndash;            <div id="tbody">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="secondLine">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="first">1</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <input type="checkbox" name="ChboxTwo" id="ChboxTwo">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <label for="phone"><input type="text" placeholder=" Name Company"></label>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="numbers">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <input type="tel" name="phone" maxlength="14" placeholder="Number">&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="price">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <input type="text" name="currency" placeholder="$0.00">&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="numberSecond">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <input type="tel" maxlength="14" placeholder="Number">&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="PAP">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <input class='checkBoxTick' type="checkbox" name="checkBoxPap">&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="FAX">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <input class='checkBoxTick' type="checkbox" name="checkBoxFax">&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="imag">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <input type="text" name="text" placeholder="Comment">&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="Preferr">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <input type="text" name="text" placeholder="Sec comment">&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="arrow">&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--            <table>-->
+<!--                <tbody>-->
+<!--                <tr>-->
+<!--                    <td><input type="checkbox"></td>-->
+<!--                    <td data-label="Contact Name">Name Company</td>-->
+<!--                    <td data-label="Contact Phone">Number</td>-->
+<!--                    <td data-label="Budget">$0.00</td>-->
+<!--                    <td data-label="Contact">Number</td>-->
+<!--                    <td data-label="PAP"><input type="checkbox"></td>-->
+<!--                    <td data-label="FAX"><input type="checkbox"></td>-->
+<!--                    <td data-label="Imaging">Comment</td>-->
+<!--                    <td data-label="Preferred">Sec comment</td>-->
+<!--                </tr>-->
+<!--                </tbody>-->
+<!--            </table>-->
+<!--            <div class="line"></div>-->
+<!--            <div id="addPhysicianModal" class="modal">-->
+<!--                <div class="secondLine modal-content ">-->
+<!--                    <span class="close">&times;</span>-->
+<!--                    <form id="addPhysicianForm">-->
+<!--                        <div class="first">1</div>-->
+<!--                        <input type="checkbox" name="ChboxTwo" id="ChboxOne">-->
+<!--                        <label for="name"><input type="text" id="name" placeholder=" Name Company"></label>-->
+<!--                        <div class="numbers">-->
+<!--                            <input type="tel" id="phone" name="phone" maxlength="14" placeholder="Number">-->
+<!--                        </div>-->
+<!--                        <div class="price">-->
+<!--                            <input type="text" id="budget" name="currency" placeholder="$0.00">-->
+<!--                        </div>-->
+<!--                        <div class="numberSecond">-->
+<!--                            <input type="tel" id="contact" maxlength="14" placeholder="Number">-->
+<!--                        </div>-->
+<!--                        <div class="PAP">-->
+<!--                            <input class='checkBoxTick' type="checkbox" name="checkBoxPap" id="pap">-->
+<!--                        </div>-->
+<!--                        <div class="FAX">-->
+<!--                            <input class='checkBoxTick' type="checkbox" name="checkBoxFax" id="fax">-->
+<!--                        </div>-->
+<!--                        <div class="imag">-->
+<!--                            <input type="text" name="text" id="imaging" placeholder="Comment">-->
+<!--                        </div>-->
+<!--                        <div class="Preferr">-->
+<!--                            <input type="text" name="text" id="preferred" placeholder="Sec comment">-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash;                        <div class="arrow">&ndash;&gt;-->
+<!--                        &lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--                        <button type="submit">Add</button>-->
+<!--                    </form>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="endButton">-->
+<!--                <button class="btn" type="button" id="Cansel">Cansel</button>-->
+<!--                <button class="btn .addP" type="button" id="Save">Save</button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </form>-->
+
+<!--</div>-->
+<!--<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
+<!--<script src="Tab.js"></script>-->
+<!--</body>-->
+<!--</html>-->
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physicians Table</title>
     <link rel="stylesheet" href="Tab.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
 <body>
 
-<div class="container">
-    <form action="finalTab.html" method="post" enctype="multipart/form-data" id="Form">
-        <div class="labels">
-            <div class="Physicians">Physicians (2)</div>
-            <div class="button">
-                <button type="button">Rename</button>
-                <button type="reset">Remove</button>
-                <button type="submit" class="AddP">Add Physician</button>
-            </div>
-        </div>
-
-        <div class="content ">
-            <div class="oneName">
-                <input type="checkbox" name="Chbox" id="Chbox">
-                <label for="Chbox">Content Name</label>
-                <div class="arrow-down"></div>
-                <div class="br"></div>
-                <div class="Name">
-                    Contact Ph...
-                    <div class="arrow-down"></div>
-                    <div class="br"></div>
-                </div>
-                <div class="Name">
-                    Bud...
-                    <div class="arrow-down"></div>
-                    <div class="br"></div>
-                </div>
-                <div class="Name">
-                    Contact...
-                    <div class="arrow-down"></div>
-                    <div class="br"></div>
-                </div>
-                <div class="NameFix">
-                    PAP
-                    <div class="br"></div>
-                </div>
-                <div class="NameFix">
-                    FAX
-                    <div class="br"></div>
-                </div>
-                <div class="Name">
-                    Imagin...
-                    <div class="arrow-down"></div>
-                    <div class="br"></div>
-                </div>
-                <div class="Name">
-                    Preferr...
-                    <div class="arrow-down"></div>
-                    <div class="br"></div>
-                </div>
-            </div>
-            <div class="secondLine">
-                <div class="first">1</div>
-                <input type="checkbox" name="ChboxTwo" id="ChboxTwo">
-                <label for="phone"><input type="text" placeholder=" Name Company"></label>
-                <div class="numbers">
-                    <input type="tel" id="phone" name="phone" maxlength="14" placeholder="Number">
-                </div>
-                <div class="price">
-                    <input type="text" id="currency" name="currency" placeholder="$0.00">
-                </div>
-                <div class="numberSecond">
-                    <input type="tel" id="phoneS" maxlength="14" placeholder="Number">
-                </div>
-                <div class="PAP">
-                    <input class='checkBoxTick' type="checkbox" name="checkBoxPap" id="checkBoxPapOne">
-                </div>
-                <div class="FAX">
-                    <input class='checkBoxTick' type="checkbox" name="checkBoxFax" id="checkBoxFaxOne">
-                </div>
-                <div class="imag">
-                    <input type="text" name="text" id="Text" placeholder="Comment">
-                </div>
-                <div class="Preferr">
-                    <input type="text" name="text" id="TextSecond" placeholder="Sec comment">
-                </div>
-                <div class="arrow">
-                </div>
-
-            </div>
-            <div class="line"></div>
-            <div class="threeLine">
-                <div class="first">2</div>
-                <input type="checkbox" name="ChboxTwo" id="ChboxThree">
-                <label for="phone"><input type="text" placeholder=" Name company"></label>
-                <div class="numbers ">
-                    <input type="text" id="phoneThree" name="phone" maxlength="14" placeholder="Your number">
-                </div>
-                <div class="price fixPrice">
-                    <input type="text" id="currencyThree" name="currency" placeholder="$0.00">
-                </div>
-                <div class="numberSecond">
-                    <input class="checkBox" type="text" id="phoneSThree" maxlength="14" placeholder=" Number">
-                </div>
-                <div class="PAPTwo">
-                    <input class="checkBoxTick" type="checkbox" name="checkBoxPapTwo" id="checkBoxPapTwo">
-                </div>
-                <div class="FAX">
-                    <input class='checkBoxTick' type="checkbox" name="checkBoxFax" id="checkBoxFax">
-                </div>
-                <div class="imag">
-                    <input type="text" name="text" id="TextThree" placeholder="  Comment">
-                </div>
-                <div class="Preferr">
-                    <input type="text" name="text" id="TextThreeS" placeholder=" Sec omment">
-                </div>
-                <div class="arrow">
-
-                </div>
-            </div>
-            <div class="line"></div>
-            <div class="endButton">
-                <button type="button" id="Cansel">Cansel</button>
-                <button type="button" id="Save">Save</button>
-            </div>
-        </div>
-    </form>
-
+<div class="label">
+    <h1>Physician (2)</h1>
+    <div class="buttons">
+        <button  class='btn' id="renameBtn">Rename</button>
+        <button class="btn" id="removeBtn ">Remove</button>
+        <button  class="btn btnAdd" id="addPhysicianBtn">Add Physician</button>
+    </div>
 </div>
+
+<div class="table-container">
+    <table id="table">
+        <thead>
+        <tr>
+            <th></th>
+            <th>Contact Name</th>
+            <th>Contact Phone</th>
+            <th>Budget</th>
+            <th>Contact</th>
+            <th>PAP</th>
+            <th>FAX</th>
+            <th>Imaging</th>
+            <th>Preferred</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td data-label="Contact Name">Name Company</td>
+            <td data-label="Contact Phone">Number</td>
+            <td data-label="Budget">$0.00</td>
+            <td data-label="Contact">Number</td>
+            <td data-label="PAP"><input type="checkbox"></td>
+            <td data-label="FAX"><input type="checkbox"></td>
+            <td data-label="Imaging">Comment</td>
+            <td data-label="Preferred">Sec comment</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div id="addPhysicianModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <form id="addPhysicianForm">
+            <label for="name">Contact Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="phone">Contact Phone:</label>
+            <input type="text" id="phone" name="phone" required><br><br>
+            <label for="budget">Budget:</label>
+            <input type="text" id="budget" name="budget" required><br><br>
+            <label for="contact">Contact:</label>
+            <input type="text" id="contact" name="contact" required><br><br>
+            <label for="pap">PAP:</label>
+            <input type="checkbox" id="pap" name="pap"><br><br>
+            <label for="fax">FAX:</label>
+            <input type="checkbox" id="fax" name="fax"><br><br>
+            <label for="imaging">Imaging:</label>
+            <input type="text" id="imaging" name="imaging"><br><br>
+            <label for="preferred">Preferred:</label>
+            <input type="text" id="preferred" name="preferred"><br><br>
+            <button type="submit">Add</button>
+        </form>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="Tab.js"></script>
+
 </body>
 </html>
