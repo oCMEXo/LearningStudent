@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -26,7 +27,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Poppins", sans-serif;
 }
 
 .progress-bar {
@@ -73,6 +73,11 @@ body {
     }
 }
 
+
+input {
+    padding: 10px
+}
+
 .label {
     margin-top: 20px;
     display: flex;
@@ -104,22 +109,25 @@ body {
     color: gray;
 }
 
-.button {
+.buttonClick {
     margin-top: 20px;
     display: flex;
     gap: 10px;
-    a {
-        text-decoration: none;
+    button {
+        border: 1px solid gray;
         padding: 10px 30px;
         text-align: center;
         border-radius: 9px;
     }
-    .Back {
-        color: black;
-        outline: 1px solid rgba(128, 128, 128, 0.5);
-    }
-    .Next {
-        color: white;
-        background-color: blue;
-    }
+}
+
+#back {
+    color: black;
+    background-color: white;
+
+}
+
+#next {
+    color: white;
+    background-color: blue;
 }
