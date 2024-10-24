@@ -18,7 +18,7 @@ function updateColor() {
 NAME.addEventListener('change', updateColor);
 
 let currentStep = 1;
-const totalSteps = 3; // Общее количество шагов
+const totalSteps = 3;
 const bar = document.getElementById('bar');
 const numberEvent = document.getElementById('number_Event');
 const completedText = document.getElementById('Complated');
@@ -38,50 +38,43 @@ const eventData = [
     }
 ];
 
-// Функция для обновления прогресс-бара
 function updateProgress() {
-    // Рассчитываем процент заполненности
     const progressPercent = (currentStep / totalSteps) * 100;
     bar.style.width = progressPercent + '%';
     completedText.innerText = 'Completed ' + Math.round(progressPercent) + '%';
     numberEvent.innerText = currentStep;
 }
 
-// Функция для отображения текущего шага
 function showStep(step) {
-    // Загрузка данных из массива, если они есть
     document.getElementById('NAme').value = eventData[step - 1].name;
     document.getElementById('Date').value = eventData[step - 1].date;
     document.getElementById('Time').value = eventData[step - 1].time;
 
-    // Управление видимостью кнопок
-    backButton.classList.toggle('hidden', step === 1); // Скрыть кнопку "Назад" на первом шаге
-    nextButton.innerText = step === totalSteps ? 'Finish' : 'Next >'; // Изменяем текст кнопки на последнем шаге
+    backButton.classList.toggle('hidden', step === 1);
+    nextButton.innerText = step === totalSteps ? 'Finish' : 'Next >';
 
     updateProgress();
 }
 
-// Функция для сохранения данных из полей
 function saveData() {
     eventData[currentStep - 1].name = document.getElementById('NAme').value;
     eventData[currentStep - 1].date = document.getElementById('Date').value;
     eventData[currentStep - 1].time = document.getElementById('Time').value;
 }
 
-// Обработчик события для кнопки "Next"
+
 nextButton.addEventListener('click', () => {
-    saveData(); // Сохраняем данные текущего шага
+    saveData();
 
     if (currentStep < totalSteps) {
         currentStep++;
         showStep(currentStep);
     } else {
-        // Здесь можно добавить код для отправки данных на сервер или выполнения других действий
         console.log('All data submitted: ' + JSON.stringify(eventData));
     }
 });
 
-// Обработчик события для кнопки "Back"
+
 backButton.addEventListener('click', () => {
     if (currentStep > 1) {
         currentStep--;
@@ -89,7 +82,6 @@ backButton.addEventListener('click', () => {
     }
 });
 
-// Инициализация
 showStep(currentStep);
 
 
